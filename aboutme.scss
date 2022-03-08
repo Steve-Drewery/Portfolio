@@ -1,13 +1,5 @@
 // **base model**
 .container{
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: center;
-    // flex-direction: column;
-    // background-color: rgb(255, 128, 123);
-    // text-align: center;
-    // border-radius: 20px;
-    // margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -18,14 +10,22 @@
     background-color: rgb(255, 128, 123);
     border-radius: 20px;
     margin: 0 20%;
+    font-family: poppins;
 }
-h1,h2,body{
+body{
     text-align: center;
+    font-family: poppins;
 }
-p{
+.p-box{
+    background-color: rgb(255, 128, 123);
     border: solid white;
     border-radius: 20px;
-    padding: 5px;
+    max-width: 75%;
+    margin: 20px;
+}
+p{
+    font-family: poppins;
+    padding: 1%;
 }
 // **Base model end**
 // **navbar**
@@ -34,10 +34,10 @@ nav{
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: white;
-    border-top: 2px rgb(255, 128, 123);
     text-align: center;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
+    margin-top: 2px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -54,6 +54,7 @@ a:hover{
     height: 20px;
     cursor: pointer;
     font-weight: bold;
+    margin: 5px;
 }
 
 // **blog**
@@ -69,7 +70,8 @@ a:hover{
 .blog-box{
     font-family: poppins;
     background-color: rgb(255, 128, 123);
-    border: 1px solid white;
+    border: solid white;
+    border-radius: 20px;
     margin: 20px;
     max-width: 75%;
 }
@@ -103,6 +105,7 @@ a:hover{
 .blog-text .blog-title:hover{
     color: white;
     transition: all ease 0.3s;
+    cursor: pointer;
 }
 .blog-text p2{
     color: black;
@@ -116,9 +119,38 @@ a:hover{
 }
 .blog-text a2{
     color: black;
+    font-weight: bold;
 }
 .blog-text a2:hover{
     color: white;
     transition: all ease 0.3s;
+    cursor: pointer;
 }
 // **blog end**
+// **Contact**
+.profiles{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.profile-img{
+    flex-direction: column;
+    margin: 50px;
+}
+a3{
+    color: black;
+    background: white;
+    border-radius: 20px;
+    height: 75px;
+    width: 75px;
+}
+a3:hover{
+    background-color: bisque;
+    background-size: 120%;
+    border-radius: 5px 5px 5px 5px;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px;
+}

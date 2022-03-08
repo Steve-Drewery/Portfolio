@@ -9,16 +9,25 @@
   background-color: #ff807b;
   border-radius: 20px;
   margin: 0 20%;
+  font-family: poppins;
 }
 
-h1, h2, body {
+body {
   text-align: center;
+  font-family: poppins;
+}
+
+.p-box {
+  background-color: #ff807b;
+  border: solid white;
+  border-radius: 20px;
+  max-width: 75%;
+  margin: 20px;
 }
 
 p {
-  border: solid white;
-  border-radius: 20px;
-  padding: 5px;
+  font-family: poppins;
+  padding: 1%;
 }
 
 nav {
@@ -26,10 +35,10 @@ nav {
   flex-wrap: wrap;
   justify-content: space-evenly;
   background-color: white;
-  border-top: 2px #ff807b;
   text-align: center;
   width: 100%;
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
+  margin-top: 2px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -48,6 +57,7 @@ a:hover {
   height: 20px;
   cursor: pointer;
   font-weight: bold;
+  margin: 5px;
 }
 
 .blog-container {
@@ -63,7 +73,8 @@ a:hover {
 .blog-box {
   font-family: poppins;
   background-color: #ff807b;
-  border: 1px solid white;
+  border: solid white;
+  border-radius: 20px;
   margin: 20px;
   max-width: 75%;
 }
@@ -102,6 +113,7 @@ a:hover {
 .blog-text .blog-title:hover {
   color: white;
   transition: all ease 0.3s;
+  cursor: pointer;
 }
 
 .blog-text p2 {
@@ -117,11 +129,43 @@ a:hover {
 
 .blog-text a2 {
   color: black;
+  font-weight: bold;
 }
 
 .blog-text a2:hover {
   color: white;
   transition: all ease 0.3s;
+  cursor: pointer;
+}
+
+.profiles {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  flex-direction: column;
+  margin: 50px;
+}
+
+a3 {
+  color: black;
+  background: white;
+  border-radius: 20px;
+  height: 75px;
+  width: 75px;
+}
+
+a3:hover {
+  background-color: bisque;
+  background-size: 120%;
+  border-radius: 5px 5px 5px 5px;
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 5px;
 }
 
 /*# sourceMappingURL=aboutme.css.map */
