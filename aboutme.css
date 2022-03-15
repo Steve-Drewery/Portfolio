@@ -46,8 +46,10 @@ nav {
 
 a {
   color: black;
-  background: white;
-  border-radius: 20px;
+  border: solid bisque;
+  border-radius: 20px 20px 20px 20px;
+  width: 100px;
+  height: 30px;
 }
 
 a:hover {
@@ -57,8 +59,7 @@ a:hover {
   width: 100px;
   height: 30px;
   cursor: pointer;
-  font-weight: bold;
-  margin: 5px;
+  transition: all ease 0.3s;
 }
 
 .blog-container {
@@ -72,6 +73,7 @@ a:hover {
 }
 
 .blog-box {
+  font-family: poppins;
   background-color: #ff807b;
   border: solid white;
   border-radius: 20px;
@@ -149,12 +151,9 @@ a:hover {
   margin: 50px;
 }
 
-a3 {
-  color: black;
-  background: white;
-  border-radius: 20px;
-  height: 75px;
-  width: 75px;
+.no-wrap {
+  font-weight: bold;
+  white-space: nowrap;
 }
 
 /*# sourceMappingURL=aboutme.css.map */
