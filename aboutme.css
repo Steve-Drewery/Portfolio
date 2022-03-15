@@ -1,12 +1,21 @@
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  margin: 20px 100px;
-  flex-wrap: wrap;
-  flex-direction: column;
-  background-color: #ff807b;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #a3ffff;
   border-radius: 20px;
   margin: 0 15%;
   font-family: poppins;
@@ -18,8 +27,10 @@ body {
 }
 
 .p-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  background-color: #ff807b;
+  background-color: bisque;
   border: solid white;
   border-radius: 20px;
   max-width: 75%;
@@ -32,9 +43,14 @@ p {
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   background-color: white;
   text-align: center;
   width: 100%;
@@ -59,22 +75,33 @@ a:hover {
   width: 100px;
   height: 30px;
   cursor: pointer;
+  -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
 }
 
 .blog-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   margin: 20px 10%;
-  flex-wrap: wrap;
-  flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .blog-box {
   font-family: poppins;
-  background-color: #ff807b;
+  background-color: bisque;
   border: solid white;
   border-radius: 20px;
   max-width: 75%;
@@ -84,26 +111,37 @@ a:hover {
 .blog-img {
   width: 90%;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 5%;
 }
 
 .blog-img img {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .blog-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .blog-text span {
   font-size: 0.9rem;
-  color: white;
   font-style: italic;
 }
 
@@ -113,7 +151,8 @@ a:hover {
 }
 
 .blog-text .blog-title:hover {
-  color: white;
+  color: #a3ffff;
+  -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
   cursor: pointer;
 }
@@ -135,19 +174,28 @@ a:hover {
 }
 
 .blog-text a2:hover {
-  color: white;
+  color: #a3ffff;
+  -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
   cursor: pointer;
 }
 
 .profiles {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .profile-img {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 50px;
 }
 
@@ -155,5 +203,4 @@ a:hover {
   font-weight: bold;
   white-space: nowrap;
 }
-
 /*# sourceMappingURL=aboutme.css.map */
